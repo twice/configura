@@ -147,7 +147,6 @@ Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
-" Plug 'craigemery/vim-autotag'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
@@ -167,7 +166,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'sass', 'scss', 'less'] }
 
-Plug 'metakirby5/codi.vim'
+"online cheatsheet at <leader>?
+Plug 'lifepillar/vim-cheat40'
 "True Sublime Text style multiple selections for Vim
 Plug 'terryma/vim-multiple-cursors'
 " `gS` to split a one-liner into multiple lines
@@ -176,21 +176,20 @@ Plug 'AndrewRadev/splitjoin.vim'
 
 " colorschemes
 "-------------
-Plug 'agreco/vim-citylights'
-Plug 'arcticicestudio/nord-vim'
+" Plug 'agreco/vim-citylights'
+" Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
-Plug 'jacoborus/tender.vim'
+" Plug 'jacoborus/tender.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'kaicataldo/material.vim'
-Plug 'lifepillar/vim-solarized8'
-Plug 'mswift42/vim-themes'
+" Plug 'mswift42/vim-themes'
 Plug 'nightsense/carbonized'
-Plug 'nightsense/cosmic_latte'
-Plug 'nightsense/snow'
+" Plug 'nightsense/cosmic_latte'
+" Plug 'nightsense/snow'
 Plug 'rakr/vim-one'
-Plug 'romainl/flattened'
+" Plug 'romainl/flattened'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'YorickPeterse/happy_hacking.vim'
+" Plug 'YorickPeterse/happy_hacking.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -320,6 +319,8 @@ let g:indentLine_first_char = '│'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_setColors = 0
 " }}}
+
+nmap <leader>l :IndentLinesToggle<CR>
 
 "Tagbar
 "------------------
